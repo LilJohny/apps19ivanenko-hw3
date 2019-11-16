@@ -63,7 +63,9 @@ public class SmartArrayApp {
         MyComparator cmp = new MyComparator() {
             @Override
             public int compare(Object firstObject, Object secondObject) {
-                return ((Student) firstObject).getSurname().compareTo(((Student) secondObject).getSurname());
+                Student firstStudent =(Student) firstObject;
+                Student secondStudent = (Student) secondObject;
+                return firstStudent.getSurname().compareTo(secondStudent.getSurname());
             }
         };
 
