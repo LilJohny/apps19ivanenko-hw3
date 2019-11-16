@@ -14,22 +14,22 @@ public class SmartArrayApp {
 
         MyPredicate pr = new MyPredicate() {
             @Override
-            public boolean test(Object t) {
-                return ((Integer) t) > 0;
+            public boolean test(Object object) {
+                return ((Integer) object) > 0;
             }
         };
 
         MyComparator cmp = new MyComparator() {
             @Override
-            public int compare(Object o1, Object o2) {
-                return ((Integer) o1) - ((Integer) o2);
+            public int compare(Object firstObject, Object secondObject) {
+                return ((Integer) firstObject) - ((Integer) secondObject);
             }
         };
 
         MyFunction func = new MyFunction() {
             @Override
-            public Object apply(Object t) {
-                return 2 * ((Integer) t);
+            public Object apply(Object object) {
+                return 2 * ((Integer) object);
             }
         };
 
@@ -54,23 +54,23 @@ public class SmartArrayApp {
     findDistinctStudentNamesFrom2ndYearWithGPAgt4AndOrderedBySurname(Student[] students) {
         MyPredicate pr = new MyPredicate() {
             @Override
-            public boolean test(Object t) {
-                Student student = (Student) t;
+            public boolean test(Object object) {
+                Student student = (Student) object;
                 return student.getYear() == 2 && student.getGPA() >= 4;
             }
         };
 
         MyComparator cmp = new MyComparator() {
             @Override
-            public int compare(Object o1, Object o2) {
-                return ((Student) o1).getSurname().compareTo(((Student) o2).getSurname());
+            public int compare(Object firstObject, Object secondObject) {
+                return ((Student) firstObject).getSurname().compareTo(((Student) secondObject).getSurname());
             }
         };
 
         MyFunction func = new MyFunction() {
             @Override
-            public Object apply(Object t) {
-                Student student = (Student) t;
+            public Object apply(Object object) {
+                Student student = (Student) object;
                 return  student.getSurname()+ " "+student.getName() ;
             }
         };
