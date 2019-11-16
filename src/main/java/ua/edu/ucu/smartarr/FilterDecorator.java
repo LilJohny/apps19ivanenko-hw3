@@ -8,7 +8,7 @@ import java.util.stream.Collector;
 // Tests every element and removes it if it doesn't satisfy MyPredicate
 public class FilterDecorator extends SmartArrayDecorator {
     private MyPredicate pred;
-    private final String OPERATION="FILTER";
+    private static final String OPERATION="FILTER";
     public FilterDecorator(SmartArray smartArray, MyPredicate predicate) {
         super(smartArray);
         pred = predicate;

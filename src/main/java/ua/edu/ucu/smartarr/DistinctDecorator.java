@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 // Remove duplicates from SmartArray. Use method equals() to compare objects
 public class DistinctDecorator extends SmartArrayDecorator {
-    private final String OPERATION = "DISTINCT";
+    private static final String OPERATION = "DISTINCT";
     public DistinctDecorator(SmartArray smartArray) {
         super(smartArray);
         distinct();
