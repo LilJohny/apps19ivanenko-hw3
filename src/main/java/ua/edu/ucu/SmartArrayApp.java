@@ -56,14 +56,14 @@ public class SmartArrayApp {
             @Override
             public boolean test(Object object) {
                 Student student = (Student) object;
-                return student.getYear() == 2 && student.getGPA() >= 4;
+                return student.getYear() == 2 && student.getGpa() >= 4;
             }
         };
 
         MyComparator cmp = new MyComparator() {
             @Override
             public int compare(Object firstObject, Object secondObject) {
-                Student firstStudent =(Student) firstObject;
+                Student firstStudent = (Student) firstObject;
                 Student secondStudent = (Student) secondObject;
                 return firstStudent.getSurname().compareTo(secondStudent.getSurname());
             }
@@ -73,7 +73,7 @@ public class SmartArrayApp {
             @Override
             public Object apply(Object object) {
                 Student student = (Student) object;
-                return  student.getSurname()+ " "+student.getName() ;
+                return student.getSurname() + " " + student.getName();
             }
         };
         SmartArray studentSmartArray = new BaseArray(students);
