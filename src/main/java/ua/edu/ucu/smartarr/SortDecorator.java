@@ -6,7 +6,7 @@ import java.util.Arrays;
 
 // Sorts elements using MyComparator to compare them
 public class SortDecorator extends SmartArrayDecorator {
-    private static final String OPERATION = "SORT";
+    private  String operation = "SORT";
     private MyComparator comparator;
 
 
@@ -19,7 +19,7 @@ public class SortDecorator extends SmartArrayDecorator {
     private void sort() {
         Object[] arr = smartArray.toArray();
         Arrays.sort(arr, comparator);
-        smartArray = new BaseArray(arr, OPERATION);
+        smartArray = new BaseArray(arr, operation);
     }
 
     @Override
