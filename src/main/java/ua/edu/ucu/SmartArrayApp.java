@@ -81,9 +81,7 @@ public class SmartArrayApp {
         studentSmartArray = new SortDecorator(studentSmartArray, cmp);
         studentSmartArray = new MapDecorator(studentSmartArray, func);
         studentSmartArray = new DistinctDecorator(studentSmartArray);
-        // Hint: to convert Object[] to String[] - use the following code
         Object[] result = studentSmartArray.toArray();
         return Arrays.stream(result).toArray(String[]::new);
-        //return null;
     }
 }

@@ -4,8 +4,9 @@ import java.util.Arrays;
 
 // Base array for decorators
 public class BaseArray implements SmartArray {
+    private static final String OPERATION = "BASE";
     private Object[] array;
-    private final String OPERATION = "BASE";
+
 
     public BaseArray(Object[] arr) {
         array = arr;
