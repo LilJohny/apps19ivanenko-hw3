@@ -8,7 +8,7 @@ class Student {
     private String name;
     private String surname;
 
-    public Student(String studentName, String surname, double gpa, int year) {
+    public Student(String name, String surname, double gpa, int year) {
         this.gpa = gpa;
         this.year = year;
         this.name = name;

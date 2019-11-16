@@ -6,7 +6,7 @@ import java.util.Arrays;
 
 
 public class MapDecorator extends SmartArrayDecorator {
-    private  String operation = "MAP";
+    private String operation = "MAP";
     private MyFunction func;
 
 
@@ -18,7 +18,8 @@ public class MapDecorator extends SmartArrayDecorator {
 
     private void map() {
         Object[] array = smartArray.toArray();
-        Object[] modifiedArr = Arrays.stream(array).map((s) -> func.apply(s)).toArray();
+        Object[] modifiedArr = Arrays.stream(array).map(
+                s -> func.apply(s)).toArray();
         smartArray = new BaseArray(modifiedArr, operation);
     }
 

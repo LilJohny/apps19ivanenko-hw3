@@ -18,7 +18,8 @@ public class FilterDecorator extends SmartArrayDecorator {
 
     private void filter() {
         Object[] arr = smartArray.toArray();
-        Object[] filteredArray = Arrays.stream(arr).filter(s -> pred.test(s)).toArray();
+        Object[] filteredArray = Arrays.stream(arr).filter(
+                s -> pred.test(s)).toArray();
         smartArray = new BaseArray(filteredArray, operation);
     }
 
