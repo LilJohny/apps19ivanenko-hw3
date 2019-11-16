@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 // Base array for decorators
 public class BaseArray implements SmartArray {
-    private  String OPERATION = "BASE";
+    private  String operation = "BASE";
     private Object[] array;
 
 
@@ -24,7 +24,7 @@ public class BaseArray implements SmartArray {
 
     @Override
     public String operationDescription() {
-        return OPERATION;
+        return operation;
     }
 
     @Override
