@@ -6,8 +6,9 @@ import java.util.Arrays;
 
 
 public class MapDecorator extends SmartArrayDecorator {
-    private MyFunction func;
     private static final String OPERATION = "MAP";
+    private MyFunction func;
+
 
     public MapDecorator(SmartArray smartArray, MyFunction function) {
         super(smartArray);

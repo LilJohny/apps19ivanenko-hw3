@@ -6,8 +6,9 @@ import java.util.Arrays;
 
 // Sorts elements using MyComparator to compare them
 public class SortDecorator extends SmartArrayDecorator {
-    private MyComparator comparator;
     private static final String OPERATION = "SORT";
+    private MyComparator comparator;
+
 
     public SortDecorator(SmartArray smartArray, MyComparator cmp) {
         super(smartArray);
