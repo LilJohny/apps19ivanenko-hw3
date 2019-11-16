@@ -12,9 +12,9 @@ public class BaseArray implements SmartArray {
         array = arr;
     }
 
-    BaseArray(Object[] arr, String operation) {
+    BaseArray(Object[] arr, String arrOperation) {
         array = arr;
-        operation = operation;
+        operation = arrOperation;
     }
 
     @Override
