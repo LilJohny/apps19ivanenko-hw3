@@ -1,6 +1,7 @@
 package ua.edu.ucu;
 
 import java.util.Arrays;
+
 import ua.edu.ucu.functions.MyComparator;
 import ua.edu.ucu.functions.MyFunction;
 import ua.edu.ucu.functions.MyPredicate;
@@ -15,7 +16,7 @@ import ua.edu.ucu.smartarr.DistinctDecorator;
 public class SmartArrayApp {
 
     public static Integer[]
-    filterPositiveIntegersSortAndMultiplyByTwo(Integer[] integers) {
+    filterPositiveIntegersSortAndMultiplyBy2(Integer[] integers) {
         MyPredicate pr = new MyPredicate() {
             @Override
             public boolean test(Object object) {
@@ -44,7 +45,7 @@ public class SmartArrayApp {
     }
 
     public static String[]
-    studentsTest(Student[] students) {
+    findDistinctStudentNamesFrom2ndYearWithGPAgt4AndOrderedBySurname(Student[] students) {
         MyPredicate pr = new MyPredicate() {
             @Override
             public boolean test(Object object) {
