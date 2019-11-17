@@ -1,9 +1,6 @@
 package ua.edu.ucu;
 
 import org.junit.Test;
-import ua.edu.ucu.functions.MyComparator;
-
-import java.util.Arrays;
 
 import static org.junit.Assert.*;
 
@@ -17,7 +14,7 @@ public class SmartArrayAppTest {
     public void testFilterPositiveIntegersSortAndMultiplyBy2() {
         Integer[] integers = {-1, 2, 0, 1, -5, 3};
         Integer[] res = 
-                SmartArrayApp.filterPositiveIntegersSortAndMultiplyBy2(integers);
+                SmartArrayApp.filterPositiveIntegersSortAndMultiplyByTwo(integers);
         Integer[] expectedRes = {2, 4, 6};
         
         assertArrayEquals(expectedRes, res);        
