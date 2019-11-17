@@ -9,7 +9,7 @@ public class BaseArray implements SmartArray {
 
 
     public BaseArray(Object[] arr) {
-        array = arr;
+        array = Arrays.copyOf(arr, arr.length);
     }
 
     BaseArray(Object[] arr, String arrOperation) {
