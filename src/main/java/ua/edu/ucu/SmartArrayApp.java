@@ -9,6 +9,7 @@ import ua.edu.ucu.smartarr.FilterDecorator;
 import ua.edu.ucu.smartarr.SmartArray;
 import ua.edu.ucu.smartarr.SortDecorator;
 import ua.edu.ucu.smartarr.MapDecorator;
+import ua.edu.ucu.smartarr.DistinctDecorator;
 
 
 public class SmartArrayApp {
