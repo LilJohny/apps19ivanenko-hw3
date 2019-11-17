@@ -58,7 +58,8 @@ public class SmartArrayApp {
             public int compare(Object firstObject, Object secondObject) {
                 Student firstStudent = (Student) firstObject;
                 Student secondStudent = (Student) secondObject;
-                return firstStudent.getSurname().compareTo(secondStudent.getSurname());
+                return firstStudent.getSurname()
+                        .compareTo(secondStudent.getSurname());
             }
         };
 
