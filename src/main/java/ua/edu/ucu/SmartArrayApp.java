@@ -45,7 +45,8 @@ public class SmartArrayApp {
     }
 
     public static String[]
-    findDistinctStudentNamesFrom2ndYearWithGPAgt4AndOrderedBySurname(Student[] students) {
+    findDistinctStudentNamesFrom2ndYearWithGPAgt4AndOrderedBySurname
+            (Student[] students) {
         MyPredicate pr = new MyPredicate() {
             @Override
             public boolean test(Object object) {
