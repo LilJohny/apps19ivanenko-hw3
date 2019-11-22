@@ -15,11 +15,4 @@ public class Tests {
 
         assertEquals (student.toString(), "Student{name=Name, surname=Surname, GPA=100.0, year=3}");
     }
-    @Test
-    public void testDistinct(){
-        Object [] array = {new Integer(3), new Integer(3), new Integer(4)};
-        BaseArray baseArray = new BaseArray(array);
-        DistinctDecorator decorator = new DistinctDecorator(baseArray);
-        int k= 0;
-    }
 }
