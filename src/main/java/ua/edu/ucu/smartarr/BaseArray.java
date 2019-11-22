@@ -12,7 +12,7 @@ public class BaseArray implements SmartArray {
         array = Arrays.copyOf(arr, arr.length);
     }
 
-    BaseArray(Object[] arr, String arrOperation) {
+    protected BaseArray(Object[] arr, String arrOperation) {
         array = Arrays.copyOf(arr, arr.length);
         operation = arrOperation;
     }
